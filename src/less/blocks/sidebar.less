@@ -1,0 +1,43 @@
+.sidebar{
+	padding-bottom: 40px;
+	&__menu{
+		margin-bottom: 30px;
+	}
+	&__application{
+		margin-bottom: 30px;		
+	}
+	.form-application{
+		width: 100%;
+		padding: 10px;
+		background-color: @body-bg;
+		border: 2px solid @body-bg-grey;
+
+	    &__close {
+		    display: none;
+	    }
+		&__title{
+			font-size: @font-size--sidebar-title;
+			padding: 10px 0 20px;
+		}
+		&__input{
+			padding: 10px;
+		}
+		&__country-list{
+			top: 50px;
+		}
+		&__region-list{
+			top: 50px;
+		}
+
+		&__captcha-img{
+			&:after{
+				right: -26px;
+			}
+		}
+		&__btn{
+			display: block;
+			width: 100%;
+			margin: 10px 0 5px;
+		}
+	}
+}

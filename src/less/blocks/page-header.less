@@ -1,0 +1,76 @@
+.page-header{
+	background-color: @body-bg;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 6;
+
+	&__logo{
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	&__wrapper{
+		text-align: right;
+		@media only screen and (max-width: 767px) {
+			display: none; /* не точно */
+		}		
+		@media only screen and (max-width: 539px) {
+			text-align: center;
+		}		
+	}
+	&__email{
+		display: inline-block;
+		position: relative;
+		padding: 25px 0;
+		&:before{
+			content: "";
+			width: 6px;
+			height: 34px;
+			background-image: url(../img/border-left.png);
+			position: absolute;
+			left: -15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}	
+		&:after{
+			content: "";
+			width: 30px;
+			height: 22px;
+			background-image: url(../img/icon-mail.png);
+			position: absolute;
+			left: -55px;
+			top: 50%;
+			transform: translateY(-50%);			
+		}	
+	}
+	&__tel{
+		display: inline-block;
+		position: relative;
+		padding: 15px 0;
+		&:before{
+			content: "";
+			width: 6px;
+			height: 34px;
+			background-image: url(../img/border-left.png);
+			position: absolute;
+			left: -15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}	
+		&:after{
+			content: "";
+			width: 31px;
+			height: 30px;
+			background-image: url(../img/icon-tel.png);
+			position: absolute;
+			left: -55px;
+			top: 50%;
+			transform: translateY(-50%);			
+		}			
+		a{
+			display: block;
+		}
+	}
+}
+

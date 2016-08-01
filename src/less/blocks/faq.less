@@ -1,0 +1,100 @@
+.faq{
+	text-align: center;
+	background-color: @body-bg-grey;
+	padding-bottom: 60px;
+
+	&__title{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: @font-size--title;
+		font-weight: 700;
+		font-family: @font-family--uni-sans;
+		color: @text-color--green;
+		padding: 25px 50px;
+		border: 5px solid #fff;		
+		margin: 70px 0 70px;
+		position: relative;
+		&:after{
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-color: @body-bg-grey;
+			border-bottom: 5px solid #fff;
+			border-right: 5px solid #fff;	
+			transform: translateX(-50%) translateY(50%) rotate(45deg);
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+		}
+		@media only screen and (max-width: 539px) {
+			padding: 20px;
+		}		
+	}
+	&__item{
+		margin-bottom: 40px;
+		text-align: left;
+		position: relative;
+		font-size: @font-size--tariffs;
+		
+	}
+	&__input{
+		display: none;
+		&:checked{
+			~ .faq__label{
+				background-image: url(../img/icon-chevron-down.png);
+			}			
+			~ .faq__answer{
+				display: block;
+			}
+		}
+	}
+	&__label{
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 70px;
+		height: 70px;
+		border: 5px solid #fff;	
+		background-image: url(../img/icon-chevron-right.png);	
+		background-repeat: no-repeat;
+		background-position: center center;	
+		&:after{
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-color: @body-bg-grey;
+			border-top: 5px solid #fff;
+			border-right: 5px solid #fff;	
+			transform: translateX(50%) translateY(-50%) rotate(45deg);
+			position: absolute;
+			top: 50%;
+			right: -4px;
+		}		
+	}
+	&__question{
+		margin: 0;
+		margin-left: 100px;
+		margin-right: 20px;
+		color: @text-color--green;
+		font-family: @font-family--roboto;
+		font-size: @font-size--subtitle;
+		border-top: 1px solid #fff;
+		border-bottom: 2px solid #fff;
+		line-height: 70px;
+
+		@media only screen and (max-width: 539px) {
+			line-height: inherit;
+			padding: 5px 0;
+		}		
+	}
+	&__answer{
+		display: none;
+		margin-top: 20px;
+		margin-left: 100px;
+		margin-right: 20px;
+		font-size: @font-size--price;		
+	}
+}

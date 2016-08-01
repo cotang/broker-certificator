@@ -1,0 +1,55 @@
+.page-footer{
+	&__logo{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.nav{
+		background-color: @body-bg;
+		text-transform: none;
+		font-weight: 700;
+		margin-top: 15px;
+		&__item{
+			padding: 5px 0;
+			a{
+				color: @text-color;
+				&:hover{		
+					text-decoration: none;
+					color: @text-color--green;
+				}			
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+			margin-bottom: 20px;
+		}		
+	}
+	.form-application{
+		z-index: 9;
+	}
+}
+
+.social{
+	margin-top: 15px;
+	float: right;
+	max-width: 60px;
+
+	&__link{
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		background-size: cover;
+		&--vk{
+			background-image: url(../img/social-vk.png);
+		}
+		&--fb{
+			background-image: url(../img/social-fb.png);
+		}	
+		&--google{
+			background-image: url(../img/social-google.png);
+		}
+		&--linkedin{
+			background-image: url(../img/social-linkedin.png);
+		}		
+	}	
+}

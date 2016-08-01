@@ -1,0 +1,46 @@
+.services-menu{
+	background-color: @body-bg-grey;
+	border: 1px solid @border-grey;
+
+	&:before{
+		content: "";
+		display: block;
+		background-color: @text-color--green;
+		position: relative;
+		top: -1px;
+		left: -1px;
+		width: calc(100% + 1px);
+		height: 5px;
+	}
+
+	&__title{
+		text-transform: uppercase;
+		color: @text-color--grey;
+		font-weight: 100;
+		font-family: @font-family--roboto;
+		font-size: @font-size--sidebar-title;
+		margin: 0;
+		padding: 15px;
+		
+	}
+	&__list{
+		text-transform: uppercase;
+		font-family: @font-family--roboto;
+		font-size: @font-size--sidebar;				
+		padding-left: 0;
+		margin: 0;
+	}
+	&__item{
+		padding: 15px;
+		border-top: 1px solid @border-grey;
+		font-weight: 700;
+		&:before{
+			content: '';
+		}
+		&--active{
+			a{
+				color: @text-color--green;				
+			}
+		}
+	}
+}
