@@ -69,7 +69,7 @@
             <li class="nav__item"><a href="#reviews">Отзывы</a></li>  
             <li class="nav__item"><a href="#faq">FAQ</a></li>
             <li class="nav__item"><a href="#modal-application">Заказать услугу</a></li>
-            <li class="nav__item"><a href="#questions01">Задать вопрос</a></li>              
+            <li class="nav__item"><a href="index.html#questions1">Задать вопрос</a></li>              
             <li class="nav__item"><a href="#">Партнеры</a></li>
             <li class="nav__item"><a href="#map">Контакты</a></li>                                 
           </ul>
@@ -137,7 +137,8 @@
 	  </div>
 	</div>
 
-    	<div id="tariffs" class="tariffs">
+    	<div class="tariffs">
+	  <a class="anchor" id="tariffs" href="javascript:void(0);"></a>
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-xs-12">
@@ -240,82 +241,32 @@
 	  </div>
 	</div>
 
-    	<div id="call" class="call">
-	  <form id="form-call" class="calls__form  form-call" action="">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col-xs-12">	        
-	          <h2 class="form-call__title">Закажите обратный звонок!</h2>
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4">	 	        
-	          <input class="form-call__input" type="text" name="Имя" placeholder="Имя" required>
-	        </div>
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4  col-md-offset-0">	
-	          <input class="form-call__input" type="tel" name="Телефон" placeholder="Телефон" required>
-	        </div>	        
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4  form-call__time">
-	          <span>Желаемое время звонка</span>
-	        </div>
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4  col-md-offset-0  form-call__time">
-	          <input class="form-call__input  form-call__input--time" type="number" name="Звонить с" placeholder="с">
-	          <input class="form-call__input  form-call__input--time" type="number" name="Звонить до" placeholder="до">
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4">
-			  <div class="form-call__country">
-			    <input class="form-call__input" type="text" name="Страна" placeholder="Страна*" required>
-			    <ul class="form-call__country-list">
-			      <li class="bold">Россия</li>
-			      <li class="bold">Беларусь</li>
-			      <li class="bold">Казахстан</li> 
-			      <li>Украина</li>
-			      <li>Азербайджан</li>
-			      <li>Армения</li>    
-			      <li>Грузия</li>
-			      <li>Молдавия</li>
-			      <li>Узбекистан</li>  
-			      <li>Киргизия</li>
-			      <li>Таджикистан</li>
-			      <li>Туркменистан</li> 
-			    </ul> 
-			  </div>
-	        </div>
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4  col-md-offset-0">					  
-			  <div class="form-call__region">
-			    <input class="form-call__input" type="text" name="Регион" placeholder="Регион*" required>
-			    <ul class="form-call__region-list">
-			      <li>Санкт-Петербург и Ленинградская область</li>
-			      <li>Москва и Московская область</li>
-			      <li>Новгородская область</li> 
-			      <li>Псковская область</li>
-			      <li>Республика Карелия</li>
-			      <li>Мурманская область</li>    
-			      <li>Калининградска яобласть</li>
-			      <li>Вологодская яобласть</li>
-			      <li>Тверская область</li>
-			    </ul> 
-			  </div>
-			</div>
-	      </div>				  
-	      <div class="row">
-	        <div class="col-xs-8  col-xs-offset-2  col-sm-4  form-call__captcha">
-			  <div class="form-call__captcha-img">
-			    <img src="../img/captcha.jpg" alt="">
-			  </div>
-			</div>
-	        <div class="col-xs-8  col-xs-offset-2  col-sm-4  col-sm-offset-0">	 		    
-			   <input class="form-call__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
-			</div>
-	      </div>
-	      <button class="form-call__btn" type="submit">Заказать звонок</button>
-	    </div>
-      </form> 	  
+    	<div class="questions">
+	  <a class="anchor" id="questions1" href="javascript:void(0);"></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12"> 
+
+	       <form id="form-question" class="questions__form  form-question" action="">     
+  <h2 class="form-question__title">Есть вопросы?</h2>        
+  <input class="form-question__input" type="text" name="Имя" placeholder="Имя"> 
+  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+  <input class="form-question__input" type="email" name="Email" placeholder="Email">
+  <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
+  <div class="form-question__captcha-img">
+    <img src="img/captcha.jpg" alt="">
+  </div>        
+  <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required>
+  <button class="form-question__btn" type="submit">Отправить вопрос</button>
+</form>    
+	       
+          </div>
+        </div>	       
+      </div>	
 	</div>
 
-    	<div id="reviews" class="reviews">
+    	<div class="reviews">
+	  <a class="anchor" id="reviews" href="javascript:void(0);"></a>
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-xs-12">
@@ -337,7 +288,8 @@
 	  </div>
 	</div>
 
-    	<div id="faq" class="faq">
+    	<div class="faq">
+	  <a class="anchor" id="faq" href="javascript:void(0);"></a>
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-xs-12">
@@ -365,85 +317,34 @@
 	  </div>
 	</div>
 
-    	<div id="questions" class="questions">
-	  <form id="form-question" class="questions__form  form-question" action="">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col-xs-12">	        
-	          <h2 class="form-question__title">Есть вопросы?</h2>
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4">	 	        
-	          <input class="form-question__input" type="text" name="Имя" placeholder="Имя">
-	        </div>
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4  col-md-offset-0">	
-	          <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
-	        </div>	        
-	        <div class="col-xs-8  col-xs-offset-2">
-	          <input class="form-question__input" type="email" name="Email" placeholder="Email">
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4">
-			  <div class="form-question__country">
-			    <input class="form-question__input" type="text" name="Страна" placeholder="Страна*" required>
-			    <ul class="form-question__country-list">
-			      <li class="bold">Россия</li>
-			      <li class="bold">Беларусь</li>
-			      <li class="bold">Казахстан</li> 
-			      <li>Украина</li>
-			      <li>Азербайджан</li>
-			      <li>Армения</li>    
-			      <li>Грузия</li>
-			      <li>Молдавия</li>
-			      <li>Узбекистан</li>  
-			      <li>Киргизия</li>
-			      <li>Таджикистан</li>
-			      <li>Туркменистан</li> 
-			    </ul> 
-			  </div>
-	        </div>
-	        <div class="col-xs-8  col-xs-offset-2  col-md-4  col-md-offset-0">					  
-			  <div class="form-question__region">
-			    <input class="form-question__input" type="text" name="Регион" placeholder="Регион*" required>
-			    <ul class="form-question__region-list">
-			      <li>Санкт-Петербург и Ленинградская область</li>
-			      <li>Москва и Московская область</li>
-			      <li>Новгородская область</li> 
-			      <li>Псковская область</li>
-			      <li>Республика Карелия</li>
-			      <li>Мурманская область</li>    
-			      <li>Калининградска яобласть</li>
-			      <li>Вологодская яобласть</li>
-			      <li>Тверская область</li>
-			    </ul> 
-			  </div>
-			</div>
-	      </div>				  
-	      <div class="row">
-	        <div class="col-xs-8  col-xs-offset-2">
-	          <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
-			</div>
-	      </div>
-	      <div class="row">
-	        <div class="col-xs-8  col-xs-offset-2  col-sm-4  form-question__captcha">
-			  <div class="form-question__captcha-img">
-			    <img src="../img/captcha.jpg" alt="">
-			  </div>
-			</div>
-	        <div class="col-xs-8  col-xs-offset-2  col-sm-4  col-sm-offset-0">	 		    
-			   <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
-			</div>
-	      </div>
-	      <button class="form-question__btn" type="submit">Отправить вопрос</button>
-	    </div>
-      </form> 	  
+    	<div class="questions">
+	  <a class="anchor" id="questions2" href="javascript:void(0);"></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12"> 
+
+	       <form id="form-question" class="questions__form  form-question" action="">     
+  <h2 class="form-question__title">Есть вопросы?</h2>        
+  <input class="form-question__input" type="text" name="Имя" placeholder="Имя"> 
+  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+  <input class="form-question__input" type="email" name="Email" placeholder="Email">
+  <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
+  <div class="form-question__captcha-img">
+    <img src="img/captcha.jpg" alt="">
+  </div>        
+  <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required>
+  <button class="form-question__btn" type="submit">Отправить вопрос</button>
+</form>    
+	       
+          </div>
+        </div>	       
+      </div>	
 	</div>    
 
 </main>
 
-<div id="map" class="map">    
+<div class="map">
+  <a class="anchor" id="map" href="javascript:void(0);"></a>    
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.4740613886943!2d60.593530027416726!3d56.8379375502676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ef54bfb1d91%3A0x60869ced7a80b757!2z0L_RgNC-0YHQvy4g0JvQtdC90LjQvdCwLCAyNSwg0JXQutCw0YLQtdGA0LjQvdCx0YPRgNCzLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC7LiwgNjIwMDE0!5e0!3m2!1sru!2sru!4v1469995435750" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
   <div class="container">
     <div class="row">
@@ -478,7 +379,7 @@
             <li class="nav__item"><a href="#reviews">Отзывы</a></li>  
             <li class="nav__item"><a href="#faq">FAQ</a></li>
             <li class="nav__item"><a href="#modal-application">Заказать услугу</a></li> 
-            <li class="nav__item"><a href="#questions01">Задать вопрос</a></li> 
+            <li class="nav__item"><a href="index.html#questions1">Задать вопрос</a></li> 
             <li class="nav__item"><a href="#">Партнеры</a></li>
             <li class="nav__item"><a href="#map">Контакты</a></li>                                 
           </ul>
@@ -499,50 +400,17 @@
 
 <div id="modal-application" class="overlay">
 
-  <form id="form-application" class="form-application"action="">
+  <form id="form-application" class="form-application" action="">
   <a class="form-application__close" href="#">Закрыть</a>
   <h3 class="form-application__title">Оставить заявку</h3>
   <input class="form-application__input" type="text" name="Имя" placeholder="Имя" required>
   <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
   <input class="form-application__input" type="email" name="Email" placeholder="Email*" required>
-  <input class="form-application__input" type="text" name="Продукция" placeholder="Наименование продукции*" required>
-  <div class="form-application__country">
-    <input class="form-application__input" type="text" name="Страна" placeholder="Страна*" required>
-    <ul class="form-application__country-list">
-      <li class="bold">Россия</li>
-      <li class="bold">Беларусь</li>
-      <li class="bold">Казахстан</li> 
-      <li>Украина</li>
-      <li>Азербайджан</li>
-      <li>Армения</li>    
-      <li>Грузия</li>
-      <li>Молдавия</li>
-      <li>Узбекистан</li>  
-      <li>Киргизия</li>
-      <li>Таджикистан</li>
-      <li>Туркменистан</li> 
-    </ul> 
-  </div>
-  <div class="form-application__region">
-    <input class="form-application__input" type="text" name="Регион" placeholder="Регион*" required>
-    <ul class="form-application__region-list">
-      <li>Санкт-Петербург и Ленинградская область</li>
-      <li>Москва и Московская область</li>
-      <li>Новгородская область</li> 
-      <li>Псковская область</li>
-      <li>Республика Карелия</li>
-      <li>Мурманская область</li>    
-      <li>Калининградска яобласть</li>
-      <li>Вологодская яобласть</li>
-      <li>Тверская область</li>
-    </ul> 
-  </div>
-  <div class="form-application__captcha">
-    <div class="form-application__captcha-img">
-      <img src="../img/captcha.jpg" alt="">
+  <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*" required>
+  <div class="form-application__captcha-img">
+      <img src="img/captcha.jpg" alt="">
     </div>
-    <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
-  </div>
+  <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
   <button class="form-application__btn" type="submit">Отправить</button>
 </form>
 

@@ -8,6 +8,10 @@ jQuery(document).ready(function($){
     var pageHeaderHeight = $(".page-header").height();
     $('.page').css("padding-top", pageHeaderHeight + "px");
 
+    /* смещение при переходе по ссылке на высоту меню */
+    var pageHeaderHeight = $(".page-header").height();
+    $('.anchor')
+    .css("top", "-" + pageHeaderHeight + "px");
 
     /* одинаковая высота у we-work-for__items */
     var weWorkForMaxHeight = 0;
