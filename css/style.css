@@ -1548,7 +1548,7 @@ li:before {
 	text-align: center;
 	position: relative;
 	background-color: #fff;
-	padding: 25px 80px;
+	padding: 25px 60px;
 	border: 5px solid #27ae60;
 	margin: 75px 0;
 }
@@ -1605,6 +1605,7 @@ li:before {
 .page-footer .nav__item {
 	padding: 5px 0;
 	margin-right: 10px;
+	min-width: 120px;
 }
 
 .page-footer .nav__item a {
@@ -2970,6 +2971,10 @@ td.visible-lg {
 	margin-top: 0;
 }
 
+.page-footer .nav__item {
+	min-width: inherit;
+}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -3007,7 +3012,6 @@ td.visible-lg {
 }
 
 .page-footer .nav__item {
-	min-width: inherit;
 	min-height: 46px;
 }
 
