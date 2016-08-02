@@ -24,6 +24,7 @@
 		&__item{
 			padding: 5px 0;
 			margin-right: 10px;
+			min-width: 120px;			
 			a{
 				color: @text-color;
 				&:hover{		
@@ -31,8 +32,10 @@
 					color: @text-color--green;
 				}			
 			}
-			@media only screen and (max-width: 767px) {
+			@media only screen and (max-width: 1023px) {
 				min-width: inherit;
+			}			
+			@media only screen and (max-width: 767px) {
 				min-height: 46px;
 			}
 			@media only screen and (max-width: 540px) {
