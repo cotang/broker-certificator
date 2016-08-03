@@ -1,13 +1,22 @@
 <form id="form-application" class="form-application" action="">
   <a class="form-application__close" href="#">Закрыть</a>
   <h3 class="form-application__title">Оставить заявку</h3>
-  <input class="form-application__input" type="text" name="Имя" placeholder="Имя" required>
-  <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-application__input" type="email" name="Email" placeholder="Email*" required>
-  <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*" required>
-  <div class="form-application__captcha-img">
-      <img src="img/captcha.jpg" alt="">
-    </div>
-  <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  <div class="form-application__input-wrapper required has-error">
+    <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper has-success">  
+    <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper required has-success">     
+    <input class="form-application__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper required has-success"> 
+    <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__captcha"></div>  
   <button class="form-application__btn" type="submit">Отправить</button>
 </form>

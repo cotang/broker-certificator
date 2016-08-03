@@ -7,11 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link href="css/style.min.css" rel="stylesheet" media="screen">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic|Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 <script>
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 </script>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic|Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!-- <script src="js/modernizr-custom.js"></script> -->
 
 </head>
@@ -23,7 +24,7 @@
     <div class="row">
       <div class="col-xs-12  col-md-6">
         <div class="page-header__logo">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <span class="logo__title"><span class="color--green">Союз</span>Эксперт</span>
             <span class="logo__slogan">мы работаем вместе для вас</span>
           </a>
@@ -53,7 +54,7 @@
             <li class="nav__item"><a href="#faq">FAQ</a></li>
             <li class="nav__item"><a href="#modal-application">Заказать услугу</a></li>
             <li class="nav__item"><a href="index.html#questions1">Задать вопрос</a></li>              
-            <li class="nav__item"><a href="#">Партнеры</a></li>
+            <li class="nav__item"><a href="page.html">Партнеры</a></li>
             <li class="nav__item"><a href="#map">Контакты</a></li>                                 
           </ul>
         </div>      
@@ -82,16 +83,25 @@
 	        <div class="content">
 	          <!-- <h1 class="content__title">Форма заявки</h1> -->
 
-	          <form id="form-question" class="questions__form  form-question" action="">     
-  <h2 class="form-question__title">Есть вопросы?</h2>        
-  <input class="form-question__input" type="text" name="Имя" placeholder="Имя"> 
-  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-question__input" type="email" name="Email" placeholder="Email">
-  <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
-  <div class="form-question__captcha-img">
-    <img src="img/captcha.jpg" alt="">
-  </div>        
-  <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required>
+	          <form id="form-question" class="form-question" action="">     
+  <h2 class="form-question__title">Есть вопросы?</h2>
+  <div class="form-question__input-wrapper required has-error">
+    <input class="form-question__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div> 
+  <div class="form-question__input-wrapper has-success">
+    <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__input-wrapper required has-success">
+    <input class="form-question__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__input-wrapper required has-success">
+    <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос*"></textarea>
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__captcha"></div>        
   <button class="form-question__btn" type="submit">Отправить вопрос</button>
 </form>    			
 
@@ -192,14 +202,23 @@
   <form id="form-application" class="form-application" action="">
   <a class="form-application__close" href="#">Закрыть</a>
   <h3 class="form-application__title">Оставить заявку</h3>
-  <input class="form-application__input" type="text" name="Имя" placeholder="Имя" required>
-  <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-application__input" type="email" name="Email" placeholder="Email*" required>
-  <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*" required>
-  <div class="form-application__captcha-img">
-      <img src="img/captcha.jpg" alt="">
-    </div>
-  <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  <div class="form-application__input-wrapper required has-error">
+    <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper has-success">  
+    <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper required has-success">     
+    <input class="form-application__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper required has-success"> 
+    <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__captcha"></div>  
   <button class="form-application__btn" type="submit">Отправить</button>
 </form>
 
