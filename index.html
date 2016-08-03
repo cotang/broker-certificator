@@ -4,32 +4,16 @@
 <meta charset="utf-8">
 <title>Союз Эксперт</title>
 <meta name="description" content="">
-<!-- <meta name="viewport" content="width=1000"> -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link href="css/style.min.css" rel="stylesheet" media="screen">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic|Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 <script>
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 </script>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic|Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!-- <script src="js/modernizr-custom.js"></script> -->
-
-<!--
-<link href="/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="icon" sizes="192x192" href="img/favicons/favicon-192x192.png">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-57x57.png">
-<meta name="theme-color" content="#2b2f38">
-<meta name="msapplication-TileColor" content="#2b2f38">
-<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
--->
 
 </head>
 
@@ -40,7 +24,7 @@
     <div class="row">
       <div class="col-xs-12  col-md-6">
         <div class="page-header__logo">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <span class="logo__title"><span class="color--green">Союз</span>Эксперт</span>
             <span class="logo__slogan">мы работаем вместе для вас</span>
           </a>
@@ -70,7 +54,7 @@
             <li class="nav__item"><a href="#faq">FAQ</a></li>
             <li class="nav__item"><a href="#modal-application">Заказать услугу</a></li>
             <li class="nav__item"><a href="index.html#questions1">Задать вопрос</a></li>              
-            <li class="nav__item"><a href="#">Партнеры</a></li>
+            <li class="nav__item"><a href="page.html">Партнеры</a></li>
             <li class="nav__item"><a href="#map">Контакты</a></li>                                 
           </ul>
         </div>      
@@ -155,7 +139,7 @@
 	          	<li>сертификация</li>
 	          </ul>    
 	          <p class="tariffs__price">от 45000</p>   	          
-	          <a class="tariffs__btn" href="#">Заказать</a>
+	          <a class="tariffs__btn" href="#modal-application">Заказать</a>
 	        </div>
 	      </div>  
 	      <div class="col-xs-12  col-md-4">
@@ -166,7 +150,7 @@
 	          	<li>для экспорта</li>   		          	
 	          </ul>    
 	          <p class="tariffs__price">от 30000</p>   	          
-	          <a class="tariffs__btn" href="#">Заказать</a>
+	          <a class="tariffs__btn" href="#modal-application">Заказать</a>
 	        </div>
 	      </div> 
 	      <div class="col-xs-12  col-md-4">
@@ -178,7 +162,7 @@
 	          	<li>подача грузовой таможенной декларации в таможенные органы</li>
 	          </ul>    
 	          <p class="tariffs__price">от 15000</p>   	          
-	          <a class="tariffs__btn" href="#">Заказать</a>
+	          <a class="tariffs__btn" href="#modal-application">Заказать</a>
 	        </div>
 	      </div> 	      
 	    </div>
@@ -234,7 +218,7 @@
 	      </div>  
 	      <div class="col-xs-12  col-md-6">
 	        <div class="what-you-get__formalize">
-	          <a class="what-you-get__btn" href="#">Оформить заказ</a>  
+	          <a class="what-you-get__btn" href="#modal-application">Оформить заказ</a>  
 	        </div>
 	      </div> 
 	    </div>
@@ -247,16 +231,25 @@
         <div class="row">
           <div class="col-xs-12"> 
 
-	       <form id="form-question" class="questions__form  form-question" action="">     
-  <h2 class="form-question__title">Есть вопросы?</h2>        
-  <input class="form-question__input" type="text" name="Имя" placeholder="Имя"> 
-  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-question__input" type="email" name="Email" placeholder="Email">
-  <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
-  <div class="form-question__captcha-img">
-    <img src="img/captcha.jpg" alt="">
-  </div>        
-  <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required>
+	          <form id="form-question" class="form-question" action="">     
+  <h2 class="form-question__title">Есть вопросы?</h2>
+  <div class="form-question__input-wrapper required has-error">
+    <input class="form-question__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div> 
+  <div class="form-question__input-wrapper has-success">
+    <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__input-wrapper required has-success">
+    <input class="form-question__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__input-wrapper required has-success">
+    <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос*"></textarea>
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__captcha"></div>        
   <button class="form-question__btn" type="submit">Отправить вопрос</button>
 </form>    
 	       
@@ -323,16 +316,25 @@
         <div class="row">
           <div class="col-xs-12"> 
 
-	       <form id="form-question" class="questions__form  form-question" action="">     
-  <h2 class="form-question__title">Есть вопросы?</h2>        
-  <input class="form-question__input" type="text" name="Имя" placeholder="Имя"> 
-  <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-question__input" type="email" name="Email" placeholder="Email">
-  <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
-  <div class="form-question__captcha-img">
-    <img src="img/captcha.jpg" alt="">
-  </div>        
-  <input class="form-question__input" type="text" name="Captcha" placeholder="Код с картинки*" required>
+	          <form id="form-question" class="form-question" action="">     
+  <h2 class="form-question__title">Есть вопросы?</h2>
+  <div class="form-question__input-wrapper required has-error">
+    <input class="form-question__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div> 
+  <div class="form-question__input-wrapper has-success">
+    <input class="form-question__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__input-wrapper required has-success">
+    <input class="form-question__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__input-wrapper required has-success">
+    <textarea class="form-question__textarea" name="Ваш вопрос" placeholder="Ваш вопрос*"></textarea>
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-question__captcha"></div>        
   <button class="form-question__btn" type="submit">Отправить вопрос</button>
 </form>    
 	       
@@ -403,14 +405,23 @@
   <form id="form-application" class="form-application" action="">
   <a class="form-application__close" href="#">Закрыть</a>
   <h3 class="form-application__title">Оставить заявку</h3>
-  <input class="form-application__input" type="text" name="Имя" placeholder="Имя" required>
-  <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
-  <input class="form-application__input" type="email" name="Email" placeholder="Email*" required>
-  <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*" required>
-  <div class="form-application__captcha-img">
-      <img src="img/captcha.jpg" alt="">
-    </div>
-  <input class="form-application__input" type="text" name="Captcha" placeholder="Код с картинки*" required> 
+  <div class="form-application__input-wrapper required has-error">
+    <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper has-success">  
+    <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper required has-success">     
+    <input class="form-application__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__input-wrapper required has-success"> 
+    <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*">
+    <p class="help-block  help-block-error">Ошибка!!!</p>
+  </div>
+  <div class="form-application__captcha"></div>  
   <button class="form-application__btn" type="submit">Отправить</button>
 </form>
 
