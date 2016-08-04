@@ -2,7 +2,13 @@
  * Script.js
  */
 
-jQuery(document).ready(function($){   
+jQuery(document).ready(function($){  
+
+    /* открывание ответа по ссылке "читать далее" */
+    $('.question-item__details').click(function(e) {
+        e.preventDefault();
+        $(this).closest('.question-item').find('.question-item__answer').toggle();      
+    });    
 
     /* залипание меню в header */
     var pageHeaderHeight = $(".page-header").height();
