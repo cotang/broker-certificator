@@ -4,6 +4,15 @@
 
 jQuery(document).ready(function($){  
 
+    /* плавный скролл */
+    $('.nav a[href*=#]').click(function(e){
+        e.preventDefault();
+        var el = $(this).attr('href');
+        $('body').animate({
+        scrollTop: $(el).offset().top}, 500);
+        return false;
+    });
+
     /* открывание ответа по ссылке "читать далее" */
     $('.question-item__details').click(function(e) {
         e.preventDefault();
