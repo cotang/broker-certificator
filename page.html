@@ -53,9 +53,9 @@
             <li class="nav__item"><a href="index.html#reviews">Отзывы</a></li>  
             <li class="nav__item"><a href="index.html#faq">FAQ</a></li>
             <li class="nav__item"><a href="#modal-application">Заказать услугу</a></li>
-            <li class="nav__item"><a href="index.html#questions1">Задать вопрос</a></li>              
+            <li class="nav__item"><a href="#questions1">Задать вопрос</a></li>              
             <li class="nav__item"><a href="page.html">Партнеры</a></li>
-            <li class="nav__item  nav__item--contacts"><a href="index.html#map">Контакты</a></li>
+            <li class="nav__item  nav__item--contacts"><a href="#map">Контакты</a></li>
             <li class="nav__item  nav__item--all-questions"><a href="page-all-questions.html">Клиентские вопросы</a></li>
           </ul>
         </div>      
@@ -135,22 +135,24 @@
   <h3 class="form-application__title">Оставить заявку</h3>
   <div class="form-application__input-wrapper required has-error">
     <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper has-success">  
     <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper required has-success">     
     <input class="form-application__input" type="email" name="Email" placeholder="Email*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper required has-success"> 
     <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__captcha"></div>  
-  <button class="form-application__btn" type="submit">Отправить</button>
+  <button class="form-application__btn send-param" type="submit" data-id="example">Отправить</button>
+  <p class="help-block  help-block-success">Ваша заявка отправлена</p>
+  <input class="form-application__hidden" type="hidden">
 </form>
 
 	            </div>
@@ -239,25 +241,33 @@
   <h3 class="form-application__title">Оставить заявку</h3>
   <div class="form-application__input-wrapper required has-error">
     <input class="form-application__input" type="text" name="Имя" placeholder="Имя*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper has-success">  
     <input class="form-application__input" type="tel" name="Телефон" placeholder="Телефон">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper required has-success">     
     <input class="form-application__input" type="email" name="Email" placeholder="Email*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__input-wrapper required has-success"> 
     <input class="form-application__input" type="text" name="Тип документа" placeholder="Тип документа*">
-    <p class="help-block  help-block-error">Ошибка!!!</p>
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
   </div>
   <div class="form-application__captcha"></div>  
-  <button class="form-application__btn" type="submit">Отправить</button>
+  <button class="form-application__btn send-param" type="submit" data-id="example">Отправить</button>
+  <p class="help-block  help-block-success">Ваша заявка отправлена</p>
+  <input class="form-application__hidden" type="hidden">
 </form>
 
 </div>
+
+<noindex>
+	<link rel="stylesheet" href="//cb.astratest.com/widget/tracker.css">
+	<script type="text/javascript" src="//cb.astratest.com/php/1.js" charset="UTF-8"></script >
+	<script type="text/javascript">var uid_code="689";</script>
+</noindex>
 
 <script src="js/script.min.js"></script>
 

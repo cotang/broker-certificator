@@ -4,8 +4,28 @@
 
 jQuery(document).ready(function($){  
 
+    /* Form Ajax sending */
+    var form = $("#form-application");
+    form.submit (function() {
+        $.ajax({
+            type: form.attr("method"),
+            url: form.attr("action"),
+            data: form.serialize(),
+            success: function(data) {
+                var value = $('#form-application button[type="submit"]').data('id');
+                $('#form-application .form-application__hidden').val(value);
+            }
+        });
+    });
+
+    /* добавление data-id кнопки в скрытый input формы form-application */
+    // $('#form-application button[type="submit"]').on('click', function() {
+    //     var value = $(this).data('id');
+    //     $('#form-application .form-application__hidden').val(value);
+    // });
+
     /* плавный скролл */
-    $('.nav a[href*=#]').click(function(e){
+    $('.nav a[href^="#"]').click(function(e){
         e.preventDefault();
         var el = $(this).attr('href');
         $('body').animate({
