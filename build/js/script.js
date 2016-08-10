@@ -4,16 +4,10 @@
 
 jQuery(document).ready(function($){  
 
-    /* Form Ajax sending */
-    var form = $("#form-application");
-    form.submit (function() {
-        var value = $('#form-application button[type="submit"]').data('id');
-        $('#form-application .form-application__hidden').val(value);        
-        $.ajax({
-            type: form.attr("method"),
-            url: form.attr("action"),
-            data: form.serialize()
-        });
+    /* Значение data-id тарифа в скрытый input */
+    $('.tariffs__btn').click(function(){
+        var value = $(this).data('id');
+        $('#form-application .form-application__hidden').val(value);
     });
 
     /* плавный скролл */
