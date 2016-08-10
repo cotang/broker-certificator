@@ -1930,18 +1930,22 @@ li:before {
 	box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
+.help-block {
+	display: none;
+}
+
 .has-success input,
 .has-success textarea {
 	border: 5px solid #5cb85c;
 }
 
-.has-success .help-block-error {
-	display: none;
-}
-
 .has-error input,
 .has-error textarea {
 	border: 5px solid #d9534f;
+}
+
+.has-error .help-block-error {
+	display: block;
 }
 
 .sidebar .has-success input,
