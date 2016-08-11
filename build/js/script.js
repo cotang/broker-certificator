@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
     });
 
     /* плавный скролл */
-    $('.nav a[href^="#"]').click(function(e){
+    $('.nav a[href^="#"]:not(.nav__modal)').click(function(e){
         e.preventDefault();
         var el = $(this).attr('href');
         $('body').animate({

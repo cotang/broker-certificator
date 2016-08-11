@@ -1810,9 +1810,8 @@ li:before {
 	justify-content: space-between;
 }
 
-.form-question__input-wrapper {
+.form-question__container .form-group {
 	width: 30%;
-	margin-bottom: 20px;
 }
 
 .form-question__input {
@@ -1956,6 +1955,14 @@ li:before {
 .sidebar .has-error input,
 .sidebar .has-error textarea {
 	border: 3px solid #d9534f;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.field-question-recaptcha .g-recaptcha > div {
+	margin: 0 auto;
 }
 
 .sidebar {
@@ -3004,7 +3011,7 @@ td.visible-lg {
 	display: block;
 }
 
-.form-question__input-wrapper {
+.form-question__container .form-group {
 	width: 100%;
 }
 
