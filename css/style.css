@@ -1708,10 +1708,6 @@ li:before {
 	text-transform: uppercase;
 }
 
-.form-application__input-wrapper {
-	margin-bottom: 15px;
-}
-
 .form-application__input {
 	width: 100%;
 	padding: 15px 20px;
@@ -1853,10 +1849,6 @@ li:before {
 
 .form-question__input:focus::placeholder {
 	color: transparent;
-}
-
-.form-question__textarea-wrapper {
-	margin-bottom: 20px;
 }
 
 .form-question__textarea {
