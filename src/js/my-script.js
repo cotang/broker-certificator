@@ -4,6 +4,45 @@
 
 jQuery(document).ready(function($){  
 
+    /* Map */
+    var map = new GMaps({
+        el: '.map',
+        lat: 56.8378081,
+        lng: 60.5950772,
+        scrollwheel: false
+    });
+    map.addMarker({
+        lat: 56.8378081,
+        lng: 60.5950772,
+        infoWindow: {
+            content: '<div class="address"><h2 class="address__tel"><a target="_blank" href="tel:+73433116280">+7 (343) 311 62 80</a></h2><p>г. Екатеринбург. ул. Ленина д. 25.</p><p>БЦ Европа. Оф. 5,124</p><p><a target="_blank" href="mailto:info@sousekspert.ru">info@sousekspert.ru</a></p></div>'
+        }
+    });
+
+    /* Hamburger */
+    if ($(window).width() < 767) {
+        $('.hamburger').show();
+        $('.nav').hide(); 
+        $('.hamburger').click(function(e){
+            e.preventDefault();
+            $('.nav').toggle();
+        });               
+    }
+
+    /* Modal */
+  $('.tariffs__btn, .what-you-get__btn, .nav__modal').click( function(e){ 
+    e.preventDefault();
+    $('.overlay').show();
+    $('body').css({"overflow":"hidden"});
+  });
+  $('.form-application__close').click( function(e){ 
+    e.preventDefault();
+    $('.overlay').hide();
+    $('body').css({"overflow":"auto"});
+  });
+
+//    $('body').css({"overflow":"hidden", "height":"100%"});
+
     /* Значение data-id тарифа в скрытый input */
     $('.tariffs__btn').click(function(){
         var value = $(this).data('id');

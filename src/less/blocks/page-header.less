@@ -5,7 +5,9 @@
 	right: 0;
 	left: 0;
 	z-index: 6;
-
+    &__inner{
+        position: relative;
+    }
 	&__logo{
 		margin-top: 8px;
 		margin-bottom: 8px;
@@ -75,5 +77,29 @@
 	.nav__item--all-questions{
 		display: none;
 	}
+}
+.hamburger{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    width: 30px;
+    height: 3px;
+    background-color: @text-color;
+
+    &:after, &:before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: @text-color;
+    }
+    &:before{
+        transform: translateY(-250%);
+    }    
+    &:after{
+        transform: translateY(150%);
+    }
 }
 

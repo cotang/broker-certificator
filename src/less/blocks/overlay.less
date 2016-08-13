@@ -8,11 +8,20 @@
     right: 0;
     background: @body-bg-overlay;
     transition: opacity 200ms;
-    visibility: hidden;
-    opacity: 0;
+    // visibility: hidden;
+    // opacity: 0;
+    display: none;
+    // pointer-events: none;
+
     &:target {
-        visibility: visible;
-        opacity: 1;
+        // visibility: visible;
+        // opacity: 1;
+        // display: block;
+        // pointer-events: auto;
     }
 
 }
+// body .overlay:target{
+//     overflow-y: hidden;
+//     position: fixed;
+// }
