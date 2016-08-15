@@ -11,12 +11,14 @@ jQuery(document).ready(function($){
         lng: 60.5950772,
         scrollwheel: false
     });
-    map.addMarker({
+    // map.addMarker({
+    //     lat: 56.8378081,
+    //     lng: 60.5950772,
+    // });
+    map.drawOverlay({
         lat: 56.8378081,
         lng: 60.5950772,
-        infoWindow: {
-            content: '<div class="address"><h2 class="address__tel"><a target="_blank" href="tel:+73433116280">+7 (343) 311 62 80</a></h2><p>г. Екатеринбург. ул. Ленина д. 25.</p><p>БЦ Европа. Оф. 5,124</p><p><a target="_blank" href="mailto:info@sousekspert.ru">info@sousekspert.ru</a></p></div>'
-        }
+        content: '<div class="address"><h2 class="address__tel"><a target="_blank" href="tel:+73433116280">+7 (343) 311 62 80</a></h2><p>г. Екатеринбург. ул. Ленина д. 25.</p><p>БЦ Европа. Оф. 5,124</p><p><a target="_blank" href="mailto:info@sousekspert.ru">info@sousekspert.ru</a></p></div>'
     });
 
     /* Hamburger */

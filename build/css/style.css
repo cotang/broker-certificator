@@ -1583,12 +1583,16 @@ li:before {
 }
 
 .address {
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	bottom: 30px;
+	left: -5px;
 	text-align: center;
 	position: relative;
 	background-color: #fff;
 	padding: 25px 60px;
 	border: 5px solid #27ae60;
-	overflow: hidden;
 }
 
 .address:after {
