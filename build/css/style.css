@@ -1586,7 +1586,7 @@ li:before {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-	bottom: 30px;
+	bottom: 50px;
 	left: -5px;
 	text-align: center;
 	position: relative;
