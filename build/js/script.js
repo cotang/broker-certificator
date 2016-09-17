@@ -2441,10 +2441,10 @@ jQuery(document).ready(function($){
         });               
     }
 
-    /* Modal */
-  $('.tariffs__btn, .what-you-get__btn, .nav__modal').click( function(e){ 
+    /* Modal application */
+  $('.what-you-get__btn, .nav__modal').click( function(e){ 
     e.preventDefault();
-    $('.overlay').show();
+    $('#modal-application').show();
     $('body').css({"overflow":"hidden"});
   });
   $('.form-application__close').click( function(e){ 
@@ -2452,13 +2452,24 @@ jQuery(document).ready(function($){
     $('.overlay').hide();
     $('body').css({"overflow":"auto"});
   });
+    /* Modal tariffs */
+  $('.tariffs__btn').click( function(e){ 
+    e.preventDefault();
+    $('#modal-tariffs').show();
+    $('body').css({"overflow":"hidden"});
+  });
+  $('.form-tariffs__close').click( function(e){ 
+    e.preventDefault();
+    $('.overlay').hide();
+    $('body').css({"overflow":"auto"});
+  });
 
 //    $('body').css({"overflow":"hidden", "height":"100%"});
 
-    /* Значение data-id тарифа в скрытый input */
+    /* Значение data-id тарифа в input */
     $('.tariffs__btn').click(function(){
         var value = $(this).data('id');
-        $('#form-application .form-application__hidden').val(value);
+        $('#formsfrontend-tarif').val("Выбранный тариф: "+value);
     });
 
     /* плавный скролл */
