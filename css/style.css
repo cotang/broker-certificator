@@ -2081,7 +2081,7 @@ li:before {
 	border: 5px solid #d9534f;
 }
 
-.has-error .help-block-error {
+.has-error .help-block {
 	display: block;
 }
 
