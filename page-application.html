@@ -110,7 +110,7 @@
   <div class="form-application__captcha"></div>  
   <button class="form-application__btn" type="submit">Отправить</button>
   <p class="help-block  help-block-success">Ваша заявка отправлена</p>
-  <input class="form-application__hidden" name="Выбранный тариф" type="hidden">
+<!--   <input class="form-application__hidden" name="Выбранный тариф" type="hidden"> -->
 </form>			
 
 	        </div>
@@ -205,9 +205,7 @@
   </div>
 </footer>
 
-
 <div id="modal-application" class="overlay">
-
   <form id="form-application" class="form-application" action="">
   <a class="form-application__close" href="#">Закрыть</a>
   <h3 class="form-application__title">Оставить заявку</h3>
@@ -230,9 +228,36 @@
   <div class="form-application__captcha"></div>  
   <button class="form-application__btn" type="submit">Отправить</button>
   <p class="help-block  help-block-success">Ваша заявка отправлена</p>
-  <input class="form-application__hidden" name="Выбранный тариф" type="hidden">
+<!--   <input class="form-application__hidden" name="Выбранный тариф" type="hidden"> -->
 </form>
-
+</div>
+<div id="modal-tariffs" class="overlay">
+  <form id="form-tariffs" class="form-tariffs" action="">
+  <a class="form-tariffs__close" href="#">Закрыть</a>
+  <h3 class="form-tariffs__title">Оставить заявку</h3>
+  <div class="form-group required has-error">
+    <input class="form-tariffs__input" type="text" name="Имя" placeholder="Имя*">
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
+  </div>
+  <div class="form-group has-success">  
+    <input class="form-tariffs__input" type="tel" name="Телефон" placeholder="Телефон">
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
+  </div>
+  <div class="form-group required has-success">     
+    <input class="form-tariffs__input" type="email" name="Email" placeholder="Email*">
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
+  </div>
+  <div class="form-group required has-success"> 
+    <input class="form-tariffs__input" type="text" name="Тип документа" placeholder="Тип документа*">
+    <p class="help-block  help-block-error">Ошибка заполнения поля формы</p>
+  </div>
+  <div class="form-group required has-success"> 
+    <input class="form-tariffs__input" id="formsfrontend-tarif" type="text" name="Тариф">
+  </div>
+  <div class="form-tariffs__captcha"></div>  
+  <button class="form-tariffs__btn" type="submit">Отправить</button>
+  <p class="help-block  help-block-success">Ваша заявка отправлена</p>
+</form>
 </div>
 
 <noindex>
